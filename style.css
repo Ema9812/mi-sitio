@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 4px 0;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  padding: 80px 16px;
+  text-align: center;
+  background-image: radial-gradient(#cfcfcf 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 435px;
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+  background: #111;
+  color: white;
+  padding: 80px 24px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.about-check img {
+  width: 120px;
+  height: auto;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+  padding: 80px 16px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.service-card {
+  max-width: 280px;
+}
+
+.service-card img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+  background: #111;
+  color: white;
+  padding: 80px 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #ffdd57;
+  padding: 14px;
+  border: none;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #e5e5e5;
+  background-image: radial-gradient(#cfcfcf 1px, transparent 1px);
+  background-size: 16px 16px;
+  padding: 60px 16px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 1024px) {
+
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 140px;
+    text-align: left;
+  }
+
+  /* ABOUT DESKTOP */
+  .about {
+    padding: 120px 140px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 80px;
+  }
+
+  .about-check img {
+    width: 160px;
+  }
+
+  .about-text {
+    max-width: 520px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  /* SERVICES DESKTOP */
+  .services {
+    padding: 120px 140px;
+  }
+
+  .services-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  /* CONTACT DESKTOP */
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 120px 140px;
+    min-height: 660px;
+  }
+
+  .contact h2 {
+    font-size: 48px;
+    width: 300px;
+  }
+
+  .contact-form {
+    width: 420px;
+  }
+
+  .contact-form button {
+    width: 200px;
+    align-self: center;
+  }
+
+  /* FOOTER DESKTOP */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 140px;
+    min-height: 346px;
+  }
+
+  .footer-top {
+    margin-bottom: 0;
+  }
+
+  .social-links {
+    gap: 16px;
+  }
+}
